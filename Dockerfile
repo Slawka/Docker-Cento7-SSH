@@ -1,4 +1,4 @@
-FROM centos:6.10
+FROM centos:7
 
 RUN yum update -y && yum upgrade -y && yum install -y openssh-server chpasswd
 RUN mkdir /var/run/sshd

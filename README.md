@@ -1,5 +1,5 @@
 # DockerSSH
-DockerSSH Centos 6.10
+DockerSSH Centos 7
 
 Build <code>docker build -t docker_ssh .</code>
 <br>
