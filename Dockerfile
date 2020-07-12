@@ -1,6 +1,6 @@
 FROM centos:7
 
-RUN yum update -y && yum upgrade -y && yum install -y openssh-server chpasswd
+RUN yum update -y && yum upgrade -y && yum install -y openssh-server chpasswd net-tools
 RUN mkdir /var/run/sshd
 RUN echo 'root:root' | chpasswd
 RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
